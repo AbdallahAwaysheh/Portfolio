@@ -1,3 +1,7 @@
+
+
+
+
 * {
     margin: 0;
     padding: 0;
@@ -49,7 +53,7 @@ body {
     padding-right: 10px;
     text-decoration: none;
     color: white;
-    font-size: 1.2em;
+    font-size: 100%;
     font-family: 'Irish Grover';
     border-right: solid 0.2px;
 
@@ -223,55 +227,66 @@ h3 {
 .pdf-button-content {
     color: #746145;
 }
-.pdf-button-container{
+
+.pdf-button-container {
     display: flex;
     justify-content: space-evenly;
     flex-direction: column;
 }
+
 .pdf-button-container a {
     text-decoration: none;
 }
-.abdallah-information{
+
+.abdallah-information {
     background-color: #4D7260;
     padding: 30px;
     margin: 50px;
     border-radius: 10px;
     font-size: 100%;
-    
+
 }
+
 tr td {
     border-bottom: #71a78d solid 0.5px;
     color: antiquewhite;
     font-family: Arial, Helvetica, sans-serif;
     padding-top: 20px;
 }
-#no-border{
+
+#no-border {
     border: none;
-    
+
 }
-#no-border a{
+
+#no-border a {
     text-decoration: none;
     color: #95fecb;
 }
+
 /* ----------------------------------------------------- */
 
-.card{
+.card {
     background-color: #4D7260;
 }
-.card-body{
+
+.card-body {
     background-color: #B09369;
 }
+
 /* --------------------------------------------------- */
-.work-experience{
+.work-experience {
     display: flex;
     flex-direction: column;
+    justify-content: center;
     align-items: center;
 }
-.Work-Experience-cards{
+
+.Work-Experience-cards {
     display: flex;
     align-items: center;
     flex-wrap: wrap;
-    
+
 }
 
 .cardcssJob {
@@ -291,14 +306,17 @@ tr td {
     max-height: 300px;
     padding: 5px;
 }
+
 .cardcssJob img {
     max-width: 50%;
     border-radius: 50%;
 }
+
 .cardcssJob:hover {
     cursor: pointer;
     transform: translateY(-10px);
 }
+
 .cardcssJob-text {
     background-color: #4D7260;
     border-radius: 20px;
@@ -307,8 +325,121 @@ tr td {
     max-width: 100%;
     min-width: 200px;
 }
+
 .cardcssJob-text a {
     text-decoration: none;
     color: aliceblue;
     font-size: 100%;
+}
+
+/* -------------------------------------------------- */
+
+.contact-content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    margin: 10em 50px;
+}
+
+.contact-image img {
+    max-width: 250px;
+    border-radius: 20px;
+    margin: 20px 7em;
+    transition: transform 0.2s, box-shadow 0.2s;
+
+}
+
+.contact-image img:hover {
+    transform: translateY(-10px);
+}
+
+.contact-text {
+    background-color: #68cf9d;
+    border-radius: 20px;
+    padding: 30px;
+    border: #000000 solid 4px;
+
+}
+
+.contact-text a {
+    color: rgb(255, 255, 255);
+}
+
+/* Add this at the end of your CSS */
+
+@media only screen and (max-width: 768px) {
+    .navigation {
+        justify-content: center;
+    }
+
+    .navigation a {
+        padding: 5px;
+    }
+
+    .home {
+        padding-top: 150px;
+    }
+
+    .home-content {
+        flex-direction: column;
+        gap: 50px;
+        margin: 3em 0;
+    }
+
+    .content-image img {
+        width: 100%;
+        max-width: 300px;
+    }
+
+    .content-text {
+        padding: 1em;
+        text-align: center;
+        font-size: 100%;
+    }
+
+    .projects {
+        padding: 100px 25px;
+    }
+
+    .projects-card {
+        gap: 20px;
+    }
+
+    .cardcss {
+        max-width: none;
+        width: 100%;
+    }
+
+    .resume-content {
+        flex-direction: column;
+        align-items: center;
+        margin: 3em 0;
+    }
+
+    .content-image img {
+        max-width: 200px;
+    }
+
+    .pdf-button {
+        padding: 20px;
+    }
+
+    .education {
+        padding: 100px 25px;
+    }
+
+    .Work-Experience-cards {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .work-experience {
+        padding: 100px 25px;
+    }
+
+    .cardcssJob {
+        width: 100%;
+        margin: 20px 0;
+    }
 }
