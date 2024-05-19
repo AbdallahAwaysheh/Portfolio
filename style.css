@@ -366,9 +366,7 @@ tr td {
     color: rgb(255, 255, 255);
 }
 
-/* Add this at the end of your CSS */
-
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: 750px) {
     .navigation {
         justify-content: center;
     }
@@ -382,7 +380,7 @@ tr td {
     }
 
     .home-content {
-        flex-direction: column;
+        
         gap: 50px;
         margin: 3em 0;
     }
