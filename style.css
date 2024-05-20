@@ -220,6 +220,7 @@ h3 {
     border-radius: 50px;
     box-shadow: 0px 2px black;
     transition: transform 0.2s, box-shadow 0.2s;
+    text-align: center;
 }
 
 .pdf-button:hover {
@@ -389,7 +390,6 @@ footer{
 .icons a{
     margin-right: 10px;
 }
-
 
 @media only screen and (max-width: 768px) {
     h3{
