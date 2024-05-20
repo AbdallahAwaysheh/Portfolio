@@ -2,7 +2,7 @@
 
 
 
-* {
+html {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -54,7 +54,7 @@ body {
     text-decoration: none;
     color: white;
     font-size: 100%;
-    font-family: 'Irish Grover';
+    font-family: Arial, Helvetica, sans-serif;
     border-right: solid 0.2px;
 
 }
@@ -85,7 +85,7 @@ hr {
 
 h3 {
     padding-top: 5px;
-    font-family: 'Irish Grover';
+    font-family: Arial, Helvetica, sans-serif;
     text-align: center;
     font-size: 3em;
     color: #4D7260;
@@ -370,8 +370,31 @@ tr td {
 .contact-text a {
     color: rgb(255, 255, 255);
 }
+/* -------------------------------------------------------- */
+
+footer{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+.copy-right p{
+    color: rgb(85, 85, 79);
+}
+.icons{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    
+}
+.icons a{
+    margin-right: 10px;
+}
+
 
 @media only screen and (max-width: 768px) {
+    h3{
+        font-size: x-large;
+    }
     .header{
         flex-direction: column;
     }
@@ -380,7 +403,7 @@ tr td {
     }
 
     .navigation a {
-        padding: 5px;
+        font-size: x-small;
     }
 
     .home {
@@ -452,4 +475,16 @@ tr td {
         width: 100%;
         margin: 20px 0;
     }
+    footer{
+        flex-direction: column;
+    }
+    .copy-right{
+        text-align: center;
+        font-size: small;
+    }
+    .icons {
+        padding-bottom: 30px;
+    }
+
+
 }
