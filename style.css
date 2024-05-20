@@ -80,6 +80,7 @@ hr {
 /* -------------------------------------------------- */
 .home {
     padding: 200px 100px;
+    text-align: center;
 }
 
 h3 {
@@ -103,9 +104,12 @@ h3 {
 .content-text {
     background-color: #DAB682;
     padding: 2em;
-    max-width: 1000px;
+    max-width: 500px;
+    min-width: 300px;
     border-radius: 20px;
-    font-size: 2em;
+}
+.content-text p{
+    font-size: 100%;
 }
 
 .content-image img {
@@ -381,6 +385,10 @@ tr td {
 
     .home {
         padding-top: 150px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
     }
 
     .home-content {
