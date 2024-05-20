@@ -1,7 +1,3 @@
-
-
-
-
 html {
     margin: 0;
     padding: 0;
@@ -108,7 +104,8 @@ h3 {
     min-width: 300px;
     border-radius: 20px;
 }
-.content-text p{
+
+.content-text p {
     font-size: 100%;
 }
 
@@ -371,33 +368,40 @@ tr td {
 .contact-text a {
     color: rgb(255, 255, 255);
 }
+
 /* -------------------------------------------------------- */
 
-footer{
+footer {
     display: flex;
     flex-direction: row;
     justify-content: space-around;
 }
-.copy-right p{
+
+.copy-right p {
     color: rgb(85, 85, 79);
 }
-.icons{
+
+.icons {
     display: flex;
     flex-direction: row;
     justify-content: space-evenly;
-    
+
 }
-.icons a{
+
+.icons a {
     margin-right: 10px;
 }
 
+
 @media only screen and (max-width: 768px) {
-    h3{
+    h3 {
         font-size: x-large;
     }
-    .header{
+
+    .header {
         flex-direction: column;
     }
+
     .navigation {
         justify-content: center;
     }
@@ -415,7 +419,7 @@ footer{
     }
 
     .home-content {
-        
+
         gap: 50px;
         margin: 3em 0;
     }
@@ -475,13 +479,16 @@ footer{
         width: 100%;
         margin: 20px 0;
     }
-    footer{
+
+    footer {
         flex-direction: column;
     }
-    .copy-right{
+
+    .copy-right {
         text-align: center;
         font-size: small;
     }
+
     .icons {
         padding-bottom: 30px;
     }
